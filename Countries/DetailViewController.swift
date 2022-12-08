@@ -40,6 +40,11 @@ extension UIImageView {
     
 extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 8
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = infoTableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
         if !(country.region.isEmpty) {
             countryArr[3] = "Region: \(country.region)"
         }
@@ -61,15 +66,12 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
             countryArr[5] = "Languages: \(String(describing: country.languages!.values.formatted()))"
         }
         if country.population != 0 {
-
             countryArr[6] = "Population: \(String(describing: country.population))"
         }
-        
-        return countryArr.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = infoTableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
+        if !((country.currencies?.isEmpty) == nil) {
+            countryArr[7] = "Currencies: \(String(describing: country.currencies!.values))"
+            //How do I get this value to show in the simulator as a string and not an optional array?
+        }
         cell.backgroundColor = .white
         cell.textLabel?.text = countryArr[indexPath.row]
         return cell
