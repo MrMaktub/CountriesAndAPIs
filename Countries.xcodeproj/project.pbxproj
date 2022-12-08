@@ -13,6 +13,10 @@
 		8A21B64129383A68007580C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A21B63F29383A68007580C7 /* Main.storyboard */; };
 		8A21B64329383A69007580C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A21B64229383A69007580C7 /* Assets.xcassets */; };
 		8A21B64629383A69007580C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A21B64429383A69007580C7 /* LaunchScreen.storyboard */; };
+		8A21B65029384033007580C7 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A21B64F29384033007580C7 /* Country.swift */; };
+		8A21B65229384040007580C7 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A21B65129384040007580C7 /* Countries.swift */; };
+		8A21B65829384E94007580C7 /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A21B65729384E94007580C7 /* CountryInfo.swift */; };
+		8A523651293C538300081F57 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A523650293C538300081F57 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8A21B64229383A69007580C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A21B64529383A69007580C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A21B64729383A69007580C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A21B64F29384033007580C7 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		8A21B65129384040007580C7 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		8A21B65729384E94007580C7 /* CountryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
+		8A523650293C538300081F57 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				8A21B63929383A68007580C7 /* AppDelegate.swift */,
 				8A21B63B29383A68007580C7 /* SceneDelegate.swift */,
 				8A21B63D29383A68007580C7 /* ViewController.swift */,
+				8A523650293C538300081F57 /* DetailViewController.swift */,
+				8A21B64F29384033007580C7 /* Country.swift */,
+				8A21B65729384E94007580C7 /* CountryInfo.swift */,
+				8A21B65129384040007580C7 /* Countries.swift */,
 				8A21B63F29383A68007580C7 /* Main.storyboard */,
 				8A21B64229383A69007580C7 /* Assets.xcassets */,
 				8A21B64429383A69007580C7 /* LaunchScreen.storyboard */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A21B65829384E94007580C7 /* CountryInfo.swift in Sources */,
+				8A21B65029384033007580C7 /* Country.swift in Sources */,
 				8A21B63E29383A68007580C7 /* ViewController.swift in Sources */,
 				8A21B63A29383A68007580C7 /* AppDelegate.swift in Sources */,
+				8A21B65229384040007580C7 /* Countries.swift in Sources */,
 				8A21B63C29383A68007580C7 /* SceneDelegate.swift in Sources */,
+				8A523651293C538300081F57 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
